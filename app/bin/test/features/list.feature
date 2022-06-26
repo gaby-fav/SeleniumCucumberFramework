@@ -1,8 +1,13 @@
 Feature: Test different actions on a list
 
-@List
-Scenario:As a test engineer, I want to validate that a text is present in a list
+@List #Siempre que se haga uyn escenario outline pide tabla de eejemplos
+Scenario Outline: Scenario Outline name:As a test engineer, I want to validate that a text is present in a list
 
 Given I navigate to the list page
-When I search the list
-Then I can find the text in the list
+When I search <state> in the list
+Then I can find <city>  in the list
+
+Examples:
+    | state      | city               |            
+    | Washington | Seattle, Washington| 
+    | Chicago    | Illinois, Chicago  | 
