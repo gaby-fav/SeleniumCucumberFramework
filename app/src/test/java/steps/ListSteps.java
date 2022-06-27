@@ -23,7 +23,7 @@ public class ListSteps {
         
     }
 
-    @Then("^I can find (.+) in the text in the list$")
+    @Then("^I can find (.+) in the list$")
     public void textIsThere(String city){
         List<String> lista= list.getAllSearchResults();
         boolean textIsThere = lista.contains(city);

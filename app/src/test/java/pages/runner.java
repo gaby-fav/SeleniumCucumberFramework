@@ -10,8 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features",
     glue = "steps",
-    monochrome = true 
-    // tags = "@List"
+    monochrome = true,
+    tags = "@Test"
 )  //si quiero mas de un tag {"@Test, @Otrotag"}
 
 public class runner{

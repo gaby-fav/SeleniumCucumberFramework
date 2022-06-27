@@ -19,7 +19,7 @@ public class GridSteps {
     public void returnValue(){
         String value = grid.getValueFromGrid(3, 2);
 
-        Assert.assertEquals("1 a", value);
+        Assert.assertEquals("r: 2, c: 1", value);
     }
 
     @Then("^I can validate the table is displayed$")

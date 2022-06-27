@@ -32,7 +32,7 @@ public class GoogleSteps {
 
     @Then("^the results march the criteria$")
     public void validateResults(){
-        Assert.assertEquals("Texto que esperamos",google.firstResult());
+        Assert.assertTrue("The Word Argentina does not appears in the first result",google.firstResult().contains("Argentina"));
 
     }
 

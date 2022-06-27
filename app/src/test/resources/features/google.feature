@@ -1,3 +1,4 @@
+@Test
 Feature: Test Google Search functionality
 
 Scenario: As a user I enter a search criteria in Google
