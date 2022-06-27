@@ -50,7 +50,7 @@ public class BasePage {
     }
 
     public static void closeBrowser(){
-        driver.quit();
+        driver.close();
 
     }
 
